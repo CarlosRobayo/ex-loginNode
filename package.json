@@ -1,0 +1,25 @@
+{
+  "name": "ex-loginNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosRobayo/ex-loginNode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosRobayo/ex-loginNode/issues"
+  },
+  "homepage": "https://github.com/CarlosRobayo/ex-loginNode#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "jade": "^1.11.0",
+    "mongoose": "^4.9.3"
+  }
+}
