@@ -1,0 +1,18 @@
+extends ./layout.jade
+block layout
+
+  div(class="container")
+
+    h1(class="text-center") Login
+    form(action="/users" method="POST")
+
+      div(class="form-group")
+        label(for="email") Email:
+        input(type="text" id="email" class="form-control" name="email" placeholder="Email")
+      
+      div(class="form-group")
+        label(for="password") Email:
+        input(type="password" id="password" class="form-control" name="password" placeholder="Password")
+
+      div(class="form-group")
+        button(class="btn btn-primary") Enviar
