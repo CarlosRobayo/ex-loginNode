@@ -1,20 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+var User = require('./public/models/db').User;
 
 var app = express();
-
-mongoose.connect('mongodb://localhost/users');
-
-var userSchemaJSON = {
-    email : String,
-    password : String
-};
-
-var user_schema = new Schema(userSchemaJSON);
-
-var User = mongoose.model('User', user_schema);
 
 app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
